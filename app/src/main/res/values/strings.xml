@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dilaut</string>
+    <string name="cari_daerah">Cari Daerah</string>
+    <string name="area_name">Nama Daerah</string>
+    <string name="area_description">Deskripsi daerah</string>
+</resources>
