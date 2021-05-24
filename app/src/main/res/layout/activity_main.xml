@@ -41,6 +41,11 @@
             tools:ignore="RtlHardcoded" />
     </FrameLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_areas"
         android:layout_width="0dp"
