@@ -1,4 +1,4 @@
-package com.dicoding.idam.SplashScreen
+package com.dicoding.idam.dilaut.SplashScreen
 
 import android.content.Intent
 import android.os.Bundle
@@ -18,6 +18,6 @@ class SplashScreen : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        },1000)
+        },3500)
     }
 }
