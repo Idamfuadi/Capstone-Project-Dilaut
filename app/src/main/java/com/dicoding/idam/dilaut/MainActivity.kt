@@ -9,5 +9,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun haiiii(){
+
+    }
+    fun bermain(){
+        //cek sync github
+    }
+
 
 }
