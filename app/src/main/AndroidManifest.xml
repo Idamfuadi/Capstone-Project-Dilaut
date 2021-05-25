@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dilaut">
         <activity android:name=".DetailAreaActivity"></activity>
-        <activity android:name=".MainActivity">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SplashScreen.SplashScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
