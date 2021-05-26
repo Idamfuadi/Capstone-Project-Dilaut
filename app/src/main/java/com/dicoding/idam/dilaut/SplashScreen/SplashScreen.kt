@@ -16,7 +16,7 @@ import com.dicoding.idam.dilaut.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {
     private lateinit var handler : Handler
-    private lateinit var binding: ActivitySplashScreenBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
