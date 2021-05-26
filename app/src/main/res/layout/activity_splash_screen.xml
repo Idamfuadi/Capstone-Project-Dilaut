@@ -7,15 +7,24 @@
     android:background="#fff"
     tools:context=".SplashScreen.SplashScreen">
 
-    <ImageView
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imgGif"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="65dp"-->
+    <!--        android:layout_marginBottom="66dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/dilaut1" />-->
+
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imgGif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="66dp"
+        android:src="@drawable/dilaut1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dilaut1" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

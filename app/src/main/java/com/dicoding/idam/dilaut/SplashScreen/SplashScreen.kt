@@ -19,20 +19,13 @@ class SplashScreen : AppCompatActivity() {
     private lateinit var binding: ActivitySplashScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_splash_screen)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_splash_screen)
+
         handler= Handler()
         handler.postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         },3500)
-        //val gambergif = ImageView(findViewById(R.id.imgGif))
-        binding.apply {
-            Glide.with(this@SplashScreen)
-                .load(R.drawable.dilaut1)
-                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-                .into(imgGif)
-        }
     }
 }
