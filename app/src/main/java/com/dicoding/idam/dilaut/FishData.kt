@@ -13,7 +13,7 @@ object FishData {
             "Tawes",
             "Udang Vaname")
 
-    private val fishDetail = arrayOf(
+    private val fishDescription = arrayOf(
             "Ini deskripsi untuk Gurami",
             "Ini deskripsi untuk Kakap Putih",
             "Ini deskripsi untuk Kerapu",
@@ -36,4 +36,17 @@ object FishData {
             R.drawable.ikan_mas,
             R.drawable.tawes,
             R.drawable.udang_vaname)
+
+    val listData: ArrayList<FishBase>
+        get() {
+            val list = arrayListOf<FishBase>()
+            for (position in fishName.indices) {
+                val fishBase = FishBase()
+                fishBase.name = fishName[position]
+                fishBase.desciption = fishDescription[position]
+                fishBase.avatar = fishImage[position]
+                list.add(fishBase)
+            }
+            return list
+        }
 }

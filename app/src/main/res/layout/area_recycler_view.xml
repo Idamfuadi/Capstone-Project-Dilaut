@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars"/>
+        tools:src="@drawable/ikan_kerapu"/>
 
     <TextView
         android:id="@+id/area_name"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="@string/area_name"
+        android:text="@string/fish_name"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/iv_user_photo"
         app:layout_constraintTop_toTopOf="@+id/iv_user_photo" />
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="35dp"
-        android:text="@string/area_description"
+        android:text="@string/fish_description"
         android:textSize="15sp"
         android:maxLines="1"
         app:layout_constraintStart_toEndOf="@+id/iv_user_photo"

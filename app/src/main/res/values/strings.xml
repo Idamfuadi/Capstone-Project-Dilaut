@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Dilaut</string>
-    <string name="cari_daerah">Cari Daerah</string>
-    <string name="area_name">Nama Daerah</string>
-    <string name="area_description">Deskripsi daerah</string>
+    <string name="cari_ikan">Cari Ikan</string>
+    <string name="fish_name">Nama Ikan</string>
+    <string name="fish_image">Gambar Ikan</string>
+    <string name="fish_description">Deskripsi Ikan</string>
+    <string name="price_now">Harga Sekarang (per kg):</string>
+    <string name="price_now_rupiah">Rp 10.000</string>
+    <string name="price_later">Perkiraan Harga (per kg) :</string>
+    <string name="day_later_1">Senin, 31 Mei 2021</string>
+    <string name="day_later_2">Selasa, 1 Juni 2021</string>
+    <string name="price_later_rupiah">Rp 15.000</string>
+    <string name="detail_fish">Detail Ikan</string>
+    <string name="estimated_price_detail">*Menentukan perkiraan harga menggunakan metode ....</string>
+
 </resources>
