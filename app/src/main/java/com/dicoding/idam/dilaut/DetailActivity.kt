@@ -19,7 +19,7 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val actionbar = supportActionBar
-        actionbar?.title = "Informasi dan Prediksi"
+        actionbar?.title = "Informasi Detail"
         actionbar?.setDisplayHomeAsUpEnabled(true)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -45,10 +45,10 @@ class DetailActivity : AppCompatActivity() {
 
 //        initTabLayout(userName = String())
 
-//        userData.login?.let {
+        fishData.name?.let {
 //            initTabLayout(it)
-//            detailViewModel.setDetailUser(it)
-//        }
+            detailViewModel.setDetailUser(it)
+        }
 
 //        fishData.name?.let {
 //            initTabLayout(it)

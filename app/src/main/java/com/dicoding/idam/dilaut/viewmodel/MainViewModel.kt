@@ -16,10 +16,10 @@ class MainViewModel : ViewModel() {
         private val TAG = MainViewModel::class.java.simpleName
     }
 
-    val listUsers = MutableLiveData<ArrayList<FishBase>>()
+    val listFishs = MutableLiveData<ArrayList<FishBase>>()
 
     fun setUserNames(username: String) {
-        val listUser = ArrayList<FishBase>()
+        val listFish = ArrayList<FishBase>()
         val url = "https://asia-east2-dilaut.cloudfunctions.net/api_predictFishPrices"
         val client = AsyncHttpClient()
         client.get(url, object : AsyncHttpResponseHandler() {
@@ -40,9 +40,9 @@ class MainViewModel : ViewModel() {
                         fishBase.avatar = item.getString("avatar_url")
 //                        fishBase.priceNow = item.getString("price_now")
 //                        fishBase.priceLater = item.getString("price_later")
-                        listUser.add(fishBase)
+                        listFish.add(fishBase)
                     }
-                    listUsers.postValue(listUser)
+                    listFishs.postValue(listFish)
                 } catch (e: Exception) {
                     Log.d("Exception main", e.message.toString())
                 }
@@ -60,6 +60,6 @@ class MainViewModel : ViewModel() {
     }
 
     fun getUsers(): LiveData<ArrayList<FishBase>> {
-        return listUsers
+        return listFishs
     }
 }
