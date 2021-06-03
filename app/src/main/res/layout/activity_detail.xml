@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailAreaActivity">
+    tools:context=".DetailActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_detail_fish"
@@ -21,7 +31,6 @@
         android:id="@+id/tv_detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -45,79 +54,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_detail_description"
         app:layout_constraintTop_toBottomOf="@+id/tv_detail_description"
         android:text="@string/price_now" />
 
     <TextView
-        android:id="@+id/price_now_rupiah"
+        android:id="@+id/tv_price_now_rupiah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_price_now"
-        app:layout_constraintTop_toTopOf="@+id/tv_price_now"
-        android:text="@string/price_now_rupiah" />
+        android:layout_marginTop="8dp"
+        android:text="@string/price_now_rupiah"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_price_now"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_now" />
 
     <TextView
         android:id="@+id/tv_price_later"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_price_now"
-        app:layout_constraintTop_toBottomOf="@+id/tv_price_now"
-        android:text="@string/price_later" />
+        android:text="@string/price_later"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_price_now_rupiah"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_now_rupiah" />
 
     <TextView
-        android:id="@+id/tv_day_later_first"
+        android:id="@+id/tv_price_later_rupiah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/price_later_rupiah"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_price_later"
-        app:layout_constraintTop_toBottomOf="@+id/tv_price_later"
-        android:text="@string/day_later_1" />
-
-    <TextView
-        android:id="@+id/price_later_rupiah_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/price_now_rupiah"
-        app:layout_constraintTop_toTopOf="@+id/tv_day_later_first"
-        android:text="@string/price_later_rupiah" />
-
-    <TextView
-        android:id="@+id/tv_day_later_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_day_later_first"
-        app:layout_constraintTop_toBottomOf="@+id/tv_day_later_first"
-        android:text="@string/day_later_2" />
-
-    <TextView
-        android:id="@+id/price_later_rupiah_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/price_now_rupiah"
-        app:layout_constraintTop_toTopOf="@+id/tv_day_later_second"
-        android:text="@string/price_later_rupiah" />
-
-    <TextView
-        android:id="@+id/tv_estimated_data_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/estimated_price_detail"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_day_later_second" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_later" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

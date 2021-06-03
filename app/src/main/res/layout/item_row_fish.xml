@@ -22,7 +22,7 @@
         tools:src="@drawable/ikan_kerapu"/>
 
     <TextView
-        android:id="@+id/area_name"
+        android:id="@+id/tv_fish_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,18 +31,5 @@
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/iv_user_photo"
         app:layout_constraintTop_toTopOf="@+id/iv_user_photo" />
-
-    <TextView
-        android:id="@+id/area_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
-        android:text="@string/fish_description"
-        android:textSize="15sp"
-        android:maxLines="1"
-        app:layout_constraintStart_toEndOf="@+id/iv_user_photo"
-        app:layout_constraintTop_toTopOf="@+id/iv_user_photo" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
