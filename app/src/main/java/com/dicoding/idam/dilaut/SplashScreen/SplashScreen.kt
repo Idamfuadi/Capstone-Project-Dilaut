@@ -6,9 +6,7 @@ import android.os.Handler
 import android.os.Looper
 
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.dicoding.idam.dilaut.MainActivity
+import com.dicoding.idam.dilaut.main.MainActivity
 import com.dicoding.idam.dilaut.R
 import com.dicoding.idam.dilaut.databinding.ActivitySplashScreenBinding
 

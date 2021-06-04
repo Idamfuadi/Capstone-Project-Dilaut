@@ -10,8 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dilaut">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".detail.DetailAreaActivity"></activity>
+        <activity android:name=".main.MainActivity"/>
         <activity android:name=".SplashScreen.SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
