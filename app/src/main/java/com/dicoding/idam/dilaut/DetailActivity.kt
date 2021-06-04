@@ -6,6 +6,7 @@ import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.dicoding.idam.dilaut.databinding.ActivityDetailBinding
+import com.dicoding.idam.dilaut.fish.FishBase
 import com.dicoding.idam.dilaut.viewmodel.DetailViewModel
 
 class DetailActivity : AppCompatActivity() {

@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.idam.dilaut.adapter.ListFishAdapter
 import com.dicoding.idam.dilaut.databinding.ActivityMainBinding
+import com.dicoding.idam.dilaut.fish.FishBase
 import com.dicoding.idam.dilaut.viewmodel.DetailViewModel
 import com.dicoding.idam.dilaut.viewmodel.MainViewModel
 
